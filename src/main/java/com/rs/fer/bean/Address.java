@@ -28,8 +28,8 @@ public class Address {
 	private String country;
 	@Column(name="pincode", length=10)
 	private String pincode;
-	//@Column(name="userid", length=10)
-	//private int userId;
+	@Column(name="userid", length=10)
+	private int userId;
 
 	@OneToOne
     @MapsId
@@ -104,14 +104,12 @@ public class Address {
 		this.pincode = pincode;
 	}
 	
-	/*
 	public int getUserId() {
 		return userId;
 	}
 	public void setUserId(int userId) {
 		this.userId = userId;
 	}
-	*/
 	
 	public String getCreated() {
 		return created;
